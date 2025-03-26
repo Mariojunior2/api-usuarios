@@ -1,0 +1,18 @@
+{
+    "name": "mario.junior2/usuario-main-corrigido-main",
+    "autoload": {
+        "psr-4": {
+            "MarioJunior2\\UsuarioMainCorrigidoMain\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mario.junior2",
+            "email": "mario.junior2@alunos.sc.senac.br"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7"
+    }
+}
