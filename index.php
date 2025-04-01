@@ -29,14 +29,14 @@ $app->post('/usuarios', function(Request $request, Response $response, array $ar
     
     if (!array_key_exists('login', $parametros) || empty($parametros['login'])) {
         $response->getBody()->write(json_encode([
-            "mensagem" => "Login obrigatorio"
+            "mensagem" => "Login obrigatorio e senha"
         ]));
         return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
     } 
 
     if (!array_key_exists('senha', $parametros) || empty($parametros['senha'])) {
         $response->getBody()->write(json_encode([
-            "mensagem" => "Senha obrigatoria"
+            "mensagem" => "Senha obrigatoria e login"
         ]));
         return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
     } 
