@@ -63,7 +63,7 @@ $app->delete('/usuarios/{id}', function(Request $request, Response $response, ar
 $app->put('/usuarios', function(Request $request, Response $response, array $args) {
     $resposta = "Users, atualizados com sucesso";
     $response->getBody()->write(json_encode($resposta));
-    return $response->withHeader('Content-Type', 'application/json');
+    return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
 });
 
 $app->run();
